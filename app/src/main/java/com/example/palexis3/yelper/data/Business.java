@@ -1,15 +1,48 @@
 package com.example.palexis3.yelper.data;
 
 
+import com.google.gson.annotations.SerializedName;
+
 public class Business {
 
+    @SerializedName("name")
     String name;
+
+    @SerializedName("price")
     String price;
-    String rating;
+
+    @SerializedName("title")
+    String title;
+
+    @SerializedName("rating")
+    Double rating;
+
+    @SerializedName("id")
     String id;
+
+    @SerializedName("image_url")
     String image_url;
 
+    @SerializedName("coordinates")
+    Coordinates coordinates;
+
     public Business(){}
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public double getRating() {
+        return rating;
+    }
+
+    public void setRating(double rating) {
+        this.rating = rating;
+    }
 
     public String getName() {
         return name;
@@ -25,14 +58,6 @@ public class Business {
 
     public void setPrice(String price) {
         this.price = price;
-    }
-
-    public String getRating() {
-        return rating;
-    }
-
-    public void setRating(String rating) {
-        this.rating = rating;
     }
 
     public String getId() {

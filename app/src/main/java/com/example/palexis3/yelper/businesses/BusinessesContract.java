@@ -32,5 +32,4 @@ public interface BusinessesContract {
 
         void openBusinessDetails(@NonNull Business requestedBusiness);
     }
-
 }
