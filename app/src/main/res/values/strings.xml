@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Yelper</string>
+    <string name="title_activity_bussiness">BussinessActivity</string>
 </resources>
