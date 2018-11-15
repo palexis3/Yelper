@@ -3,28 +3,20 @@ package com.example.palexis3.yelper.data;
 
 public class Business {
 
-    public double getLatitude() {
-        return latitude;
+    String name;
+    String price;
+    String rating;
+    String id;
+    String image_url;
+
+    public Business(){}
+
+    public String getName() {
+        return name;
     }
 
-    public void setLatitude(double latitude) {
-        this.latitude = latitude;
-    }
-
-    public double getLongitude() {
-        return longitude;
-    }
-
-    public void setLongitude(double longitude) {
-        this.longitude = longitude;
-    }
-
-    public String getSort_by() {
-        return sort_by;
-    }
-
-    public void setSort_by(String sort_by) {
-        this.sort_by = sort_by;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getPrice() {
@@ -35,8 +27,27 @@ public class Business {
         this.price = price;
     }
 
-    double latitude;
-    double longitude;
-    String sort_by;
-    String price;
+    public String getRating() {
+        return rating;
+    }
+
+    public void setRating(String rating) {
+        this.rating = rating;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getImage_url() {
+        return image_url;
+    }
+
+    public void setImage_url(String image_url) {
+        this.image_url = image_url;
+    }
 }
