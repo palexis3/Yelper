@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".businesses.BussinessesActivity"
+            android:name=".businesses.BusinessesActivity"
             android:label="@string/title_activity_bussiness"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>

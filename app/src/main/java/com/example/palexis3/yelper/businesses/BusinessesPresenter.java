@@ -10,7 +10,7 @@ import java.util.List;
 
 public class BusinessesPresenter implements BusinessesContract.Presenter, RepositoryContract.OnFinishedListener {
 
-    private BusinessesContract.View businessListView;
+    BusinessesContract.View businessListView;
     private Repository repository;
 
     public BusinessesPresenter(BusinessesContract.View businessListView) {
@@ -44,7 +44,7 @@ public class BusinessesPresenter implements BusinessesContract.Presenter, Reposi
     public void onFinished(List<Business> businessList) {
         businessListView.showBusinesses(businessList);
         if(businessListView != null) {
-            businessList.hideProgress();
+            businessListView.hideProgress();
         }
     }
 

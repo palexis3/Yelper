@@ -22,6 +22,12 @@ public interface BusinessesContract {
         void showNoBusinesses();
 
         void showBusinessDetailUi(String businessId);
+
+        void showProgress();
+
+        void hideProgress();
+
+        void onFailure(Throwable t);
     }
 
     interface Presenter extends BasePresenter {
@@ -34,4 +40,6 @@ public interface BusinessesContract {
 
         void openBusinessDetails(@NonNull Business requestedBusiness);
     }
+
+
 }

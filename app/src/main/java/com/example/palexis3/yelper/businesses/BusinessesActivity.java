@@ -9,7 +9,7 @@ import android.view.View;
 
 import com.example.palexis3.yelper.R;
 
-public class BussinessesActivity extends FragmentActivity {
+public class BusinessesActivity extends FragmentActivity {
 
     BusinessesPresenter businessesPresenter;
 

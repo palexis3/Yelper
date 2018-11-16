@@ -8,6 +8,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import com.example.palexis3.yelper.R;
 import com.example.palexis3.yelper.data.Business;
@@ -16,9 +19,11 @@ import java.util.List;
 
 public class BusinessesFragment extends Fragment implements BusinessesContract.View {
 
-    BusinessesContract.Presenter presenter;
-    BusinessesAdapter adapter;
-    RecyclerView recyclerView;
+    private BusinessesContract.Presenter presenter;
+    private BusinessesAdapter adapter;
+    private List<Business> businessList;
+    private RecyclerView recyclerView;
+    private ProgressBar progressBar;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -30,6 +35,21 @@ public class BusinessesFragment extends Fragment implements BusinessesContract.V
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.frag_businesses, container, false);
         recyclerView = (RecyclerView) view.findViewById(R.id.rvBusiness);
+
+    }
+
+    @Override
+    public void hideProgress() {
+
+    }
+
+    @Override
+    public void showProgress() {
+
+    }
+
+    @Override
+    public void onFailure(Throwable t) {
 
     }
 
