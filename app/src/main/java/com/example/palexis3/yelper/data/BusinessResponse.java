@@ -13,4 +13,6 @@ public class BusinessResponse {
     public BusinessResponse() {
         businesses = new ArrayList<>();
     }
+
+    public List<Business> getBusinesses() { return businesses; }
 }
