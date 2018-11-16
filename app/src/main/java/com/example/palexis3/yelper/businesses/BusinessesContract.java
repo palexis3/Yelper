@@ -26,6 +26,8 @@ public interface BusinessesContract {
 
     interface Presenter extends BasePresenter {
 
+        void onDestroy();
+
         void result(int requestCode, int resultCode);
 
         void loadBusinesses();
