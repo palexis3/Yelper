@@ -12,7 +12,7 @@ public class BusinessesPresenter implements BusinessesContract.Presenter {
     }
 
     @Override
-    public void loadBusinesses(boolean forceUpdate) {
+    public void loadBusinesses() {
 
     }
 

@@ -28,7 +28,7 @@ public interface BusinessesContract {
 
         void result(int requestCode, int resultCode);
 
-        void loadBusinesses(boolean forceUpdate);
+        void loadBusinesses();
 
         void openBusinessDetails(@NonNull Business requestedBusiness);
     }
